@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.0dp">
+        <TextView
+            android:id="@+id/NameLbl"
+            android:text="Name:"
+            style="@style/TextViewStyle" />
+        <EditText
+            android:id="@+id/searchTxt"
+            android:minWidth="140dp"
+            style="@style/EditViewStyle" />
+        <Button
+            android:text="Search"
+            android:layout_width="143.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonsearch"
+            android:layout_marginLeft="0.0dp"
+            android:layout_marginRight="35.0dp" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/List"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>
